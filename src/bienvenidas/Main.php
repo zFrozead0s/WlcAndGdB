@@ -25,7 +25,7 @@ class Main extends PluginBase implements Listener {
 
 public function QuitEvent(PlayerQuitEvent $event) {  
     $player = $event->getPlayer(); 
-    $event->setQuitMessage (TextFormat::RED . " [" . $player->getName() . "] §cHas left the server! "); 
+    $event->setQuitMessage (TextFormat::RED . §c[-] $playerName "); 
   }
 
 }  
