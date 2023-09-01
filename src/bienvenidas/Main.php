@@ -20,12 +20,12 @@ class Main extends PluginBase implements Listener {
   
   public function JoinEvent(PlayerJoinEvent $event) {  
     $player = $event->getPlayer(); 
-    $event->setJoinMessage (TextFormat::RED . " [" . $player->getName() . "] §bHas joined to the server! "); 
+    $event->setJoinMessage (TextFormat::RED . §7[ . "§a+" . §7] . " §b» §l§a" . $player->getName() . "."); 
   }
 
 public function QuitEvent(PlayerQuitEvent $event) {  
     $player = $event->getPlayer(); 
-    $event->setQuitMessage (TextFormat::RED . "§4- §b» §l§4" . $player->getName() . ""); 
+    $event->setQuitMessage (TextFormat::RED . [ . "§4-" . ] . " §b» §l§4" . $player->getName() . "."); 
   }
 
 }  
