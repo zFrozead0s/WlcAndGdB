@@ -4,6 +4,7 @@ namespace bienvenidas;
 
 use pocketmine\player\Player;
 use pocketmine\Server;
+use pocketmine\event\player\PlayerQuitEvent;
 use pocketmine\plugin\PluginBase;  
 use pocketmine\event\Listener;  
 use pocketmine\utils\TextFormat;  
@@ -19,7 +20,12 @@ class Main extends PluginBase implements Listener {
   
   public function JoinEvent(PlayerJoinEvent $event) {  
     $player = $event->getPlayer(); 
-    $event->setJoinMessage (TextFormat::RED . " [" . $player->getName() . "] §cHas joined to the server! "); 
+    $event->setJoinMessage (TextFormat::RED . " [" . $player->getName() . "] §bHas joined to the server! "); 
+  }
+
+public function QuitEvent(PlayerQuitEvent $event) {  
+    $player = $event->getPlayer(); 
+    $event->setQuitMessage (TextFormat::RED . " [" . $player->getName() . "] §cHas left the server! "); 
   }
 
 }  
