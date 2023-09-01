@@ -1,4 +1,3 @@
-
 <?php  
   
  namespace bienvenidas/main;  
@@ -24,6 +23,3 @@
         $event->setJoinMessage (TextFormat::RED . " [" . $player->getName() . "] §cHas joined to the server! "); 
       }  
   }  
-  
-  
- ?> 
