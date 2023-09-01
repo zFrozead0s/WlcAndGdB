@@ -15,7 +15,7 @@
           }  
           public function onEnable() {  
                   $this->getLogger()->info("§dBienvenidadV2 has been enabled.");  
-                  $this->getLogger()->info("§cThis plugin's License is the MIT-.");  
+                  $this->getLogger()->info("§cThis plugin's License is the MIT-License.");  
                   $this->getServer()->getPluginManager()->registerEvents($this,$this);  
           }  
   
