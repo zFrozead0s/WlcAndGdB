@@ -1,6 +1,6 @@
 <?php  
   
- namespace bienvenidas/main;  
+ namespace main;  
   
  use pocketmine\plugin\PluginBase;  
  use pocketmine\event\Listener;  
