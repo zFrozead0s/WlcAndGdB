@@ -18,14 +18,13 @@ class Main extends PluginBase implements Listener {
     $this->getLogger()->info("BienvenidasV2 has been enabled.");  
     $this->getLogger()->info("This plugin's License is the MIT-License.");   
   }  
- $playerName = $player->getName()
+ $playerName = $player->getName();
   public function JoinEvent(PlayerJoinEvent $event) {  
     $player = $event->getPlayer(); 
     $event->setJoinMessage ("[§a+§r] §b» §l§a" . $player->getName() . ""); 
   }
-
+  $playerName = $player->getName();
 public function QuitEvent(PlayerQuitEvent $event) {
-    $playerName = $player->getName();  
     $player = $event->getPlayer(); 
     $event->setQuitMessage ("§4-§r] §b» §l§4 $playerName"); 
   }
