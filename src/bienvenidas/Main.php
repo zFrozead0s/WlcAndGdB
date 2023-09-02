@@ -11,11 +11,13 @@ use pocketmine\utils\TextFormat;
 use pocketmine\event\player\PlayerJoinEvent;  
 use pocketmine\utils\Config;
   
-class Main extends PluginBase implements Listener {
-
  $this->saveResource("config.yml")
  $config = new
  Config($this->getDataFolder() . "config.yml", Config::YAML);
+
+  
+class Main extends PluginBase implements Listener {
+
 
   public function onEnable() : void {
     $this->getServer()->getPluginManager()->registerEvents($this,$this); 
