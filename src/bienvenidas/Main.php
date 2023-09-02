@@ -13,6 +13,10 @@ use pocketmine\utils\Config;
   
 class Main extends PluginBase implements Listener {
 
+ $this->saveResource("config.yml")
+ $config = new
+ Config($this->getDataFolder() . "config.yml", Config::YAML);
+
   public function onEnable() : void {
     $this->getServer()->getPluginManager()->registerEvents($this,$this); 
     $this->getLogger()->info("BienvenidasV2 has been enabled.");  
