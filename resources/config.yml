@@ -1,0 +1,2 @@
+join_message: "[§a+§r] §b» {name} Has joined the game!
+quit_message: "[§c-§r] §b» {name} Has left the game!"
