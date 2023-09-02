@@ -15,8 +15,8 @@ class Main extends PluginBase implements Listener {
 
   public function onEnable() : void {
     $this->getServer()->getPluginManager()->registerEvents($this,$this); 
-    $this->getLogger()->info("§dBienvenidasV2 has been enabled.");  
-    $this->getLogger()->info("§cThis plugin's License is the MIT-License.");   
+    $this->getLogger()->info("BienvenidasV2 has been enabled.");  
+    $this->getLogger()->info("This plugin's License is the MIT-License.");   
   }  
   
   public function JoinEvent(PlayerJoinEvent $event) {  
