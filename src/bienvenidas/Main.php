@@ -23,8 +23,9 @@ class Main extends PluginBase implements Listener {
     $player = $event->getPlayer(); 
     $event->setJoinMessage ("[§a+§r] §b» §l§a" . $player->getName() . ""); 
   }
-  $playerName = $player->getName()
-public function QuitEvent(PlayerQuitEvent $event) {  
+
+public function QuitEvent(PlayerQuitEvent $event) {
+    $playerName = $player->getName();  
     $player = $event->getPlayer(); 
     $event->setQuitMessage ("§4-§r] §b» §l§4 $playerName"); 
   }
