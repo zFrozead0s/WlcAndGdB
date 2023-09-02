@@ -2,4 +2,4 @@
 
 # How to edit the msg:
 
-Edit msg in Main.php
+Edit msg in plugin_data/WlcAndGdB/config.yml
