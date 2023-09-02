@@ -28,8 +28,8 @@ public function QuitEvent(PlayerQuitEvent $event) {
     $player = $event->getPlayer(); 
     $event->setQuitMessage ("§4-§r] §b» §l§4" . $player->getName() . ""); 
   }
- {  
- $this->saveResource("config.yml")
+ 
+ $this->saveResource("config.yml"){
  $config = new
  Config($this->getDataFolder() . "config.yml", Config::YAML);
   }
